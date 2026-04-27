@@ -665,7 +665,52 @@ Using the spec at /specs/order-processing.md:
 
 ---
 
-## Part 9: Evaluation Rubric (Is This System Sound?)
+## Part 10: Advanced Architectural Patterns (SOTA)
+
+Move beyond simple client-server models into resilient, high-scale patterns.
+
+### 10.1 Cell-Based Architecture (Bulkheading at Scale)
+- **Concept**: Divide your system into "cells" (independent instances of the whole stack). 
+- **Benefit**: If one cell fails, only a fraction of users are affected. 
+- **Use When**: You hit the "blast radius" limit of a single global monolith/microservice set.
+
+### 10.2 Sidecar / Service Mesh
+- **Concept**: Offload cross-cutting concerns (logging, auth, retries) to a separate process.
+- **Benefit**: Business logic stays clean; infrastructure logic is centralized and versioned.
+- **Use When**: You have multiple languages/services needing consistent observability.
+
+### 10.3 Strangler Fig Pattern
+- **Concept**: Incrementally wrap legacy code with new services until the old ones are redundant.
+- **Benefit**: Zero-downtime migration of massive legacy systems.
+- **Use When**: Refactoring a system too large to "restart" from scratch.
+
+### 10.4 Eventual Consistency & Sagas (Distributed Transactions)
+- **Concept**: Use a sequence of local transactions (Sagas) to coordinate a distributed task.
+- **Benefit**: No long-lived locks; high availability.
+- **Use When**: You need atomicity across multiple databases/services.
+
+---
+
+## Part 11: The Cloud-Native Resilience Suite
+
+Advanced techniques for self-healing systems.
+
+### 11.1 Adaptive Throttling
+- **Concept**: Instead of a hard rate limit, services reduce throughput based on backend latency.
+- **Benefit**: Prevents "death spirals" where retries overwhelm a slow system.
+
+### 11.2 Chaos Engineering (The Ultimate Test)
+- **Concept**: Intentionally inject failures into production (latency, termination).
+- **Benefit**: Proves the "Blast Radius" theory in real-world conditions.
+- **Exercise**: If you can't run the Chaos Test, you haven't answered Pillar 3.
+
+### 11.3 Graceful Degradation (Feature Toggles)
+- **Concept**: When a dependency fails, switch to a "light" version of the feature.
+- **Example**: If the "Recommendations" service is down, show "Popular Items" (static) instead.
+
+---
+
+## Part 12: Evaluation Rubric (Is This System Sound?)
 
 Score yourself 0-3 on each:
 

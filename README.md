@@ -17,27 +17,19 @@ A production-grade skill for Claude Code that enforces CTO-level thinking in AI-
 
 ---
 
-## When to Use (Trigger Keywords)
 
-Use this skill on **any conversation involving**:
+---
 
-- architecture, design, system design, blueprint, plan
-- scale, scaling, growth, bottleneck, performance
-- failure, resilience, fault tolerance, crash, disaster
-- state, stateful, state management, consistency, sync
-- blast radius, cascade, coupling, tight coupling, loose coupling
-- data flow, data consistency, eventual consistency
-- refactor, rewrite, migration, monolith, microservices
-- observability, monitoring, logging, alerting, tracing, metrics
-- optimize, performance, latency, throughput, bottleneck
-- dependency, dependent, independent, circular dependency
-- concurrency, race condition, deadlock, locking, atomicity
-- distributed, consensus, replication, quorum, split brain
-- single point of failure, SPOF, redundancy, failover
-- contract, interface, API, versioning, backward compatibility
-- DESIGN.md, design system, design tokens, visual identity
-- code review, audit, architectural review, CTO-level thinking
-- Claude Code, code generation, AI-generated code quality
+## 🎯 Trigger Keywords
+
+Use this skill whenever you encounter: *architecture, scale, resilience, state ownership, blast radius, observability, distributed systems, design.md, code review.* 
+## ⚡ Superpowers (Automation Scripts)
+
+This skill now includes **active automation** to enforce architectural rigor. Once installed, you can use these tools to audit your system:
+
+- **`systemdesign-audit`**: Scans your project root to ensure you have the required `CLAUDE.md`, `/specs`, and `DESIGN.md` in place.
+- **`systemdesign-chaos`**: Parses your architectural specs and generates testable "Chaos Prompts" to verify if your resilience logic actually works.
+- **`DESIGN.md` Integration**: Uses Google's standard for visual tokens; compatible with `npx @google/design.md`.
 
 ---
 

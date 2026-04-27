@@ -46,8 +46,14 @@
     "docs/"
   ],
   "scripts": {
+    "audit": "node scripts/audit.mjs",
+    "chaos": "node scripts/chaos.mjs",
     "validate": "node scripts/validate-skill.sh",
     "test": "echo 'Tests pass'",
     "lint": "echo 'Linting...'"
+  },
+  "bin": {
+    "systemdesign-audit": "scripts/audit.mjs",
+    "systemdesign-chaos": "scripts/chaos.mjs"
   }
 }
