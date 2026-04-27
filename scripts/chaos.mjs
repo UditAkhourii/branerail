@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * SystemDesign Chaos Scenario Generator
+ * Branerail Chaos Scenario Generator
  * Generates testable 'Chaos' prompts based on your spec's failure modes.
  */
 

@@ -1,9 +1,9 @@
 ---
-name: SystemDesign
+name: Branerail
 description: CTO-level architectural advisor for AI-native development. Use this skill whenever you encounter code design decisions, architecture discussions, system resilience questions, or any work touching: "architecture", "design", "scale", "dependencies", "state", "failure", "blast radius", "refactor", "migrate", "optimize", "resilience", "consistency", "observability", "bottleneck", "coupling", "monolith", "microservices", "distributed", "concurrency", "data flow", "system design", or any prompt suggesting code-first thinking when design-first thinking is needed. This skill integrates with Claude Code to review generated code for architectural soundness, define design systems via design.md, and guide teams toward CTO-level thinking. Trigger aggressively on architectural questions—this is where AI adds the most leverage.
 ---
 
-# SystemDesign Skill: CTO-Level Agent for AI-Native Development
+# Branerail Skill: CTO-Level Agent for AI-Native Development
 
 **Core principle**: AI generates code at lightspeed. Your job is to conduct the orchestra, not play a single instrument. In an AI-native world, architectural thinking—not syntactic fluency—separates valuable builders from those building houses of cards.
 
@@ -611,7 +611,7 @@ These are the hardest problems. Think deeply.
 
 ## Part 8: Claude Code Integration Workflow
 
-### Initializing a Project with SystemDesign
+### Initializing a Project with Branerail
 
 1. **Create a DESIGN.md** (for UI consistency):
    ```bash

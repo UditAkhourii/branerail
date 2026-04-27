@@ -1,7 +1,7 @@
 {
-  "name": "@udit/systemdesign-skill",
+  "name": "@udit/branerail",
   "version": "1.0.0",
-  "description": "CTO-level architectural skill for Claude Code. Design before you code.",
+  "description": "CTO-level architectural skill for Claude Code. Branerail forces design before you code.",
   "type": "module",
   "main": "SKILL.md",
   "keywords": [
@@ -26,12 +26,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/akhouriudit/systemdesign-skill.git"
+    "url": "https://github.com/akhouriudit/branerail.git"
   },
   "bugs": {
-    "url": "https://github.com/akhouriudit/systemdesign-skill/issues"
+    "url": "https://github.com/akhouriudit/branerail/issues"
   },
-  "homepage": "https://github.com/akhouriudit/systemdesign-skill#readme",
+  "homepage": "https://github.com/akhouriudit/branerail#readme",
   "engines": {
     "node": ">=16.0.0"
   },
@@ -53,7 +53,7 @@
     "lint": "echo 'Linting...'"
   },
   "bin": {
-    "systemdesign-audit": "scripts/audit.mjs",
-    "systemdesign-chaos": "scripts/chaos.mjs"
+    "branerail-audit": "scripts/audit.mjs",
+    "branerail-chaos": "scripts/chaos.mjs"
   }
 }

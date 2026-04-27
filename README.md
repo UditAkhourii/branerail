@@ -1,4 +1,4 @@
-# SystemDesign Skill: CTO-Level Architectural Agent
+# Branerail Skill: CTO-Level Architectural Agent
 
 A production-grade skill for Claude Code that enforces CTO-level thinking in AI-native development. This skill moves beyond code generation to **architectural design, resilience patterns, and systems thinking**.
 
@@ -6,7 +6,7 @@ A production-grade skill for Claude Code that enforces CTO-level thinking in AI-
 
 ## What This Skill Does
 
-**SystemDesign** is triggered whenever you're building, reviewing, or thinking about complex systems. It:
+**Branerail** is triggered whenever you're building, reviewing, or thinking about complex systems. It:
 
 1. **Forces design-first thinking** before code generation
 2. **Audits AI-generated code** for architectural soundness
@@ -27,8 +27,8 @@ Use this skill whenever you encounter: *architecture, scale, resilience, state o
 
 This skill now includes **active automation** to enforce architectural rigor. Once installed, you can use these tools to audit your system:
 
-- **`systemdesign-audit`**: Scans your project root to ensure you have the required `CLAUDE.md`, `/specs`, and `DESIGN.md` in place.
-- **`systemdesign-chaos`**: Parses your architectural specs and generates testable "Chaos Prompts" to verify if your resilience logic actually works.
+- **`branerail-audit`**: Scans your project root to ensure you have the required `CLAUDE.md`, `/specs`, and `DESIGN.md` in place.
+- **`branerail-chaos`**: Parses your architectural specs and generates testable "Chaos Prompts" to verify if your resilience logic actually works.
 - **`DESIGN.md` Integration**: Uses Google's standard for visual tokens; compatible with `npx @google/design.md`.
 
 ---
@@ -65,7 +65,7 @@ Can you trace the blast radius of every component?
 ## Skill Structure
 
 ```
-SystemDesign_skill/
+Branerail_skill/
 ├── SKILL.md                          # Main skill (27KB, comprehensive)
 ├── references/
 │   ├── spec_template.md             # Architectural specification template
@@ -148,7 +148,7 @@ SystemDesign_skill/
 ```
 You: "I need to build a checkout system. Where should I start?"
 
-Claude (with SystemDesign): 
+Claude (with Branerail): 
 1. Design before you code: "Sketch the architecture (boxes and arrows)"
 2. Answer the three pillars
 3. Write a spec (use references/spec_template.md)
@@ -161,7 +161,7 @@ Claude (with SystemDesign):
 You: [Paste AI-generated code]
 You: "Is this architecturally sound?"
 
-Claude (with SystemDesign):
+Claude (with Branerail):
 Runs through code_review_checklist.md:
 - Spec compliance? ✓
 - State ownership clear? ✗ [Issue found]
@@ -176,7 +176,7 @@ Runs through code_review_checklist.md:
 You: "We have user service → order service → payment gateway.
       What happens if payment gateway goes down?"
 
-Claude (with SystemDesign):
+Claude (with Branerail):
 1. Analyzes blast radius
 2. Identifies cascade failures
 3. Suggests patterns (circuit breaker, queue, retry)
@@ -188,7 +188,7 @@ Claude (with SystemDesign):
 ```
 You: "Create our DESIGN.md to ensure all UI is on-brand"
 
-Claude (with SystemDesign):
+Claude (with Branerail):
 1. References DESIGN_template.md
 2. Asks about brand colors, typography, components
 3. Generates DESIGN.md with tokens and validation
@@ -204,11 +204,11 @@ Claude (with SystemDesign):
 ```markdown
 # CLAUDE.md - Instructions for Claude Code
 
-You are a CTO-level code generator with SystemDesign guidance.
+You are a CTO-level code generator with Branerail guidance.
 
 When building new features:
 1. Reference the architectural spec at /specs/[feature].md
-2. Use the SystemDesign skill to audit your code
+2. Use the Branerail skill to audit your code
 3. Verify the Three Pillars are answered
 4. Include structured logging and metrics
 5. Handle all failure modes listed in the spec
@@ -274,7 +274,7 @@ Separate read model from write model
 
 **Scenario**: Build a checkout system that handles 1000 orders/sec, resilient to payment gateway failures.
 
-**Using SystemDesign**:
+**Using Branerail**:
 
 1. **Design Phase**
    - Sketch architecture: Web → Order Service → Payment Service → Payment Gateway
@@ -410,7 +410,7 @@ npx @google/design.md export --format dtcg DESIGN.md > tokens.json
 
 ## References
 
-- **SystemDesign Skill SKILL.md**: Main guidance (27KB)
+- **Branerail Skill SKILL.md**: Main guidance (27KB)
 - **Spec Template**: /references/spec_template.md
 - **DESIGN.md Template**: /references/DESIGN_template.md (Google's standard)
 - **Code Review Checklist**: /references/code_review_checklist.md
@@ -436,4 +436,4 @@ Questions? Feedback? Open an issue or PR on the skill repository.
 
 ---
 
-**Summary**: SystemDesign is your CTO-level guide in an AI-native world. It moves you from "coding faster" to "architecting better." Use it to build systems that are resilient, observable, maintainable, and right.
+**Summary**: Branerail is your CTO-level guide in an AI-native world. It moves you from "coding faster" to "architecting better." Use it to build systems that are resilient, observable, maintainable, and right.

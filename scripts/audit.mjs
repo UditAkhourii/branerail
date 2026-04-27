@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * SystemDesign Skill Auditor
+ * Branerail Skill Auditor
  * Checks the current project for compliance with CTO-level standards.
  */
 
@@ -15,7 +15,7 @@ const PILLARS_CHECKLIST = [
 ];
 
 console.log('================================================');
-console.log('🛡️  SystemDesign Project Auditor');
+console.log('🛡️  Branerail Project Auditor');
 console.log('================================================\n');
 
 let score = 0;
