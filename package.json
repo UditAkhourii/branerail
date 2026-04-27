@@ -21,17 +21,17 @@
   "author": {
     "name": "Udit Akhouri",
     "email": "udit@example.com",
-    "url": "https://github.com/YOUR_USERNAME"
+    "url": "https://github.com/akhouriudit"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/systemdesign-skill.git"
+    "url": "https://github.com/akhouriudit/systemdesign-skill.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/systemdesign-skill/issues"
+    "url": "https://github.com/akhouriudit/systemdesign-skill/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/systemdesign-skill#readme",
+  "homepage": "https://github.com/akhouriudit/systemdesign-skill#readme",
   "engines": {
     "node": ">=16.0.0"
   },

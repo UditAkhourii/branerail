@@ -422,7 +422,7 @@ npx @google/design.md export --format dtcg DESIGN.md > tokens.json
 - **Spec Template**: /references/spec_template.md
 - **DESIGN.md Template**: /references/DESIGN_template.md (Google's standard)
 - **Code Review Checklist**: /references/code_review_checklist.md
-- **Google DESIGN.md Spec**: https://github.com/google-labs-code/design.md
+- **Google DESIGN.md**: [Udit Akhouri](https://github.com/akhouriudit) google-labs-code/design.md
 - **WCAG 2.1**: https://www.w3.org/WAI/WCAG21/quickref/
 - **Distributed Systems**: "Designing Data-Intensive Applications" by Martin Kleppmann
 
