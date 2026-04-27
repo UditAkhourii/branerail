@@ -14,6 +14,23 @@ A production-grade skill for Claude Code that enforces CTO-level thinking in AI-
 4. **Guides resilience patterns** (retry, circuit breaker, bulkhead isolation)
 5. **Clarifies state ownership, observability, and dependencies**
 6. **Provides actionable checklists** for code review and deployment
+7. **Automates architectural audits** via built-in CLI tools
+
+---
+
+## 🚀 Installation
+
+Install the Branerail skill globally via NPM:
+
+```bash
+npm install -g @uditakhouri/branerail
+```
+
+Or add it to your project:
+
+```bash
+npm install --save-dev @uditakhouri/branerail
+```
 
 ---
 

@@ -1,5 +1,5 @@
 {
-  "name": "@udit/branerail",
+  "name": "@uditakhouri/branerail",
   "version": "1.0.0",
   "description": "CTO-level architectural skill for Claude Code. Branerail forces design before you code.",
   "type": "module",
