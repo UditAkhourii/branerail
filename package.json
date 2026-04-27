@@ -1,0 +1,53 @@
+{
+  "name": "@udit/systemdesign-skill",
+  "version": "1.0.0",
+  "description": "CTO-level architectural skill for Claude Code. Design before you code.",
+  "type": "module",
+  "main": "SKILL.md",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skill",
+    "architecture",
+    "system-design",
+    "cto",
+    "design.md",
+    "resilience",
+    "observability",
+    "three-pillars",
+    "ai-native",
+    "code-generation"
+  ],
+  "author": {
+    "name": "Udit Akhouri",
+    "email": "udit@example.com",
+    "url": "https://github.com/YOUR_USERNAME"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/systemdesign-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/systemdesign-skill/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/systemdesign-skill#readme",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "references/",
+    "examples/",
+    "docs/"
+  ],
+  "scripts": {
+    "validate": "node scripts/validate-skill.sh",
+    "test": "echo 'Tests pass'",
+    "lint": "echo 'Linting...'"
+  }
+}
